@@ -2,6 +2,9 @@
   .about h1{
     font-size: 20px;
   }
+  .header{
+    overflow-x: hidden;
+  }
   .nav-links ul li{
     display: block;
   }
@@ -26,4 +29,9 @@
     font-size: 22px;
     cursor: pointer;
   }
+  /* ---------------------------------------------------course-------------------------------------------- */
+  .row{
+    flex-direction: column;
+  }
 }
+
