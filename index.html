@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediastyle.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
   <title>university tutorial</title>
 </head>
 
 <body>
   <section class="header">
-    <nav> 
+    <nav>
       <a href="index.html"><img src="image/logo.png"></a>
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -35,7 +37,7 @@
     <p>เว็บไซต์นี้เป็นเว็บไซต์ของวิทยาลัย</p>
     <a href="" class="hero-btn red-btn">เยี่ยมชมเว็บไซต์ของวิทยาลัย</a>
   </section>
-
+  <!-- ----------------------------------------course-------------------------------------------- -->
   <section class="course">
     <h1>คอร์สเรียน</h1>
     <p>loerem ipmsum dolor sit amet, consectetur adipiscing elit</p>
@@ -54,16 +56,44 @@
       </div>
   </section>
 
-<!-- -----------------------------------javascript for toggle menu---------------------------------------- -->
+  <!-- -----------------------------------campus------------------------------------------------ -->
+  <section class="campus">
+    <h1>campus</h1>
+    <p>loerem ipmsum dolor sit amet, consectetur adipiscing elit</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="image/london.png">
+        <div class="layer">
+          <h3>London</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="image/newyork.png">
+        <div class="layer">
+          <h3>Newyork</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="image/washington.png">
+        <div class="layer">
+          <h3>Washington</h3>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- -----------------------------------javascript for toggle menu---------------------------------------- -->
   <script>
     var navLinks = document.getElementById("navLinks");
-    function showMenu(){
+    function showMenu() {
       navLinks.style.right = "0";
     }
-    function hideMenu(){
+    function hideMenu() {
       navLinks.style.right = "-200px";
     }
   </script>
 
 </body>
+
 </html>
