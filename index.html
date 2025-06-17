@@ -154,9 +154,11 @@
   <script>
     var navLinks = document.getElementById("navLinks");
     function showMenu() {
+      document.body.style.overflowY = "hidden"; // เพิ่มบรรทัดนี้
       navLinks.style.right = "0";
     }
     function hideMenu() {
+      document.body.style.overflowY = "auto"; // เพิ่มบรรทัดนี้
       navLinks.style.right = "-200px";
     }
   </script>

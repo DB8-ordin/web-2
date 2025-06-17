@@ -64,12 +64,15 @@
   <script>
     var navLinks = document.getElementById("navLinks");
     function showMenu() {
+      document.body.style.overflowY = "hidden";
       navLinks.style.right = "0";
     }
     function hideMenu() {
+      document.body.style.overflowY = "auto";
       navLinks.style.right = "-200px";
     }
   </script>
+
 
 </body>
 
