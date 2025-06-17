@@ -47,7 +47,7 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
-.about{
+.text-box{
   width: 90%;
   color: #fff;
   position: absolute;
@@ -55,16 +55,17 @@ nav img{
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  text-transform: uppercase;
 }
-.about h1{
+.text-box-boxut h1{
   font-size: 62px;
 }
-.about p{
+.text-box p{
   margin: 10px 0 40px;
   font-size: 14px;
   color: #fff;
 }
-.about a{
+.text-box a{
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -74,8 +75,10 @@ nav img{
   background: transparent;
   position: relative;
   cursor: pointer;
+  transition: 1s;
 }
-.about a:hover{
+.text-box a:hover{
+  transform: scale(1.2);
   border: 1px solid #f44336;
   background: #f44336;
   transition: 1s;
@@ -85,7 +88,7 @@ nav .fa{
 }
 
 
-/* -----------------------------------course-------------------------------------------- */
+/* --------------------course-------------------- */
 .course{
   width: 80%;
   margin: auto;
@@ -265,8 +268,10 @@ h3{
   background: transparent;
   position: relative;
   cursor: pointer;
+  transition: 1s;
 }
 .cta a:hover{
+  transform: scale(1.2);
   background: #f44336;
   border: 1px solid #f44336;
   transition: 1s;
@@ -279,13 +284,13 @@ h3{
   text-align: center;
   padding: 30px 0;
 }
-.footer h4{
-  margin-bottom: 25px;
+.footer h1{
   margin-top: 20px;
   font-weight: 600;
+  font-size: 26px;
 }
 .icons .fa{
-  margin: 0 13px;
+  margin: 0 25px;
   cursor: pointer;
   padding: 18px 0;
 }
@@ -294,20 +299,75 @@ h3{
 }
 .fa-facebook{
   color: #3b5998;
-    transition: 0.5s;
+    transition: 1s;
 }
 .fa-twitter{
   color: #55acee;
-    transition: 0.5s;
+    transition: 1s;
+}
+.fa-github{
+  color: #000;
+    transition: 1s;
 }
 .fa-instagram{
   color: #bc2a8d;
-    transition: 0.5s;
+    transition: 1s;
 }
 .fa-linkedin{
   color: #0077b5;
-    transition: 0.5s;
+    transition: 1s;
 } 
-.fa-facebook:hover,.fa-twitter:hover,.fa-instagram:hover,.fa-linkedin:hover{
-  font-size: 30px;
+.fa-facebook:hover,.fa-twitter:hover,.fa-github:hover,.fa-instagram:hover,.fa-linkedin:hover{
+  transform: scale(4);
 }
+
+
+/* --------------------about page-------------------- */
+.sub-header{
+  width: 100%;
+  min-height: 50vh;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.sub-header h1{
+  color: #fff;
+  margin-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+}
+.about{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img{
+  width: 100%;
+}
+.about-col p{
+  padding: 15px 0 25px;
+}
+.btn-about{
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 34px;
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+  cursor: pointer;
+  transition: 1s;
+}
+.btn-about:hover{
+  color: #fff;
+  background: #f44336;
+  transform: scale(1.2);
+  transition: 1s;
+}
+

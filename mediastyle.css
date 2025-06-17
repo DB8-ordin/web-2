@@ -2,7 +2,7 @@
   .about h1{
     font-size: 20px;
   }
-  .header{
+  .header , .sub-header{
     overflow-x: hidden;
   }
   .nav-links ul li{
